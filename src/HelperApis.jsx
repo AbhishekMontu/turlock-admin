@@ -2,7 +2,6 @@ import axios from "axios";
 import { imgBaseURL } from "./utils/StaticsData";
 
 const BASE_URL = `${imgBaseURL}admin`;
-// const BASE_URL = "http://192.168.29.161:3000/admin";
 
 class SublyApi {
   //token which interact with the API will be stored here.

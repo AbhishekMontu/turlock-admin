@@ -33,4 +33,4 @@ export const categoryType = [
 ];
 
 // export const imgBaseURL = "http://192.168.29.161:3000/";
-export const imgBaseURL = "http://192.168.29.221:3000/";
+export const imgBaseURL = "http://192.168.1.9:3000/";

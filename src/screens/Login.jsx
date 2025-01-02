@@ -62,7 +62,6 @@ function Login() {
 
   return (
     <section className="w-full">
-      {loading ? <Loader /> : ""}
       {/* <div class="background">
         <div class="cube"></div>
         <div class="cube"></div>
@@ -93,12 +92,14 @@ function Login() {
           }}
           color="white"
         />
+        {loading ? <Loader /> : ""}
+
         <div className="w-[40%] max-lg:w-[90%] z-50">
           {" "}
           {/* <h3 className="text-center text-white pb-10">TurlockCityNewsAdmin Panel</h3> */}
           <form
             style={styles.form}
-            className="w-full px-8 py-7"
+            className="w-full p-10"
             onSubmit={handleLogin}
           >
             <div className="my-3">
@@ -121,7 +122,7 @@ function Login() {
                     email: "",
                   });
                 }}
-                className="text-black border border-black rounded-md px-2 py-2 w-full"
+                className="text-black border border-black rounded-md px-2 py-2 w-full bg-transparent"
               />
               <p className="mb-1 text-sm text-red-600">{errorMessage?.email}</p>
             </div>
@@ -139,7 +140,7 @@ function Login() {
                   });
                 }}
                 placeholder="Enter your password"
-                className="text-black border border-black rounded-md px-2 py-2 w-full"
+                className="text-black border border-black rounded-md px-2 py-2 w-full bg-transparent"
               />
               <p className="mb-1 text-sm text-red-600">
                 {errorMessage?.password}
@@ -165,7 +166,7 @@ export const styles = {
   form: {
     display: "flex",
     flexDirection: "column",
-    borderRadius: "8px",
+    borderRadius: "12px",
     boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.1)",
     backgroundColor: "white",
   },
